@@ -1,9 +1,10 @@
 defmodule Custom do
   def frequencies(phrase) do
     phrase
+    |> IO.inspect(label: :INPUT)
     |> String.split()
     |> Enum.reduce(%{}, fn word, acc_map -> Map.update(acc_map, word, 1, &(&1 + 1)) end)
-    |> IO.inspect
+    |> IO.inspect(label: :OUTPUT)
   end
 end
 
