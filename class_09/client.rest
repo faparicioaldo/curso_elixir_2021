@@ -1,0 +1,12 @@
+POST http://localhost:4000/api/pets
+
+Authorization: Token sometoken
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "rufus",
+  "age": 2,
+  "type": "dog",
+  "size": "big"
+}
